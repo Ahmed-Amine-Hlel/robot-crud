@@ -1,34 +1,44 @@
 <div class="container">
   <div>
-    <h2>Ajouter un Produit :</h2>
+    <h2>Ajouter un Robot :</h2>
   </div>
 
   <form>
     <div class="col-sm-2 col-md-2 col-lg-2">
-      <label>ID Produit</label>
+      <label>ID Robot</label>
       <input
         type="text"
-        [(ngModel)]="newProduit.idProduit"
+        [(ngModel)]="newRobot.idRobot"
         name="idProduit"
         class="form-control"
       />
     </div>
 
     <div class="col-sm-4 col-md-4 col-lg-4">
-      <label>Nom Produit</label>
+      <label>Nom Robot</label>
       <input
         type="text"
-        [(ngModel)]="newProduit.nomProduit"
+        [(ngModel)]="newRobot.nomRobot"
         name="nomProduit"
         class="form-control"
       />
     </div>
 
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <label>Nom Developpeur</label>
+      <input
+        type="text"
+        [(ngModel)]="newRobot.nomDev"
+        name="nomDev"
+        class="form-control"
+      />
+    </div>
+
     <div class="col-sm-2 col-md-2 col-lg-2">
-      <label>Prix Produit</label>
+      <label>Prix Robot</label>
       <input
         type="number"
-        [(ngModel)]="newProduit.prixProduit"
+        [(ngModel)]="newRobot.prixRobot"
         name="prixProduit"
         class="form-control"
       />
@@ -38,7 +48,7 @@
       <label>Date création</label>
       <input
         type="date"
-        [(ngModel)]="newProduit.dateCreation"
+        [(ngModel)]="newRobot.dateCreation"
         name="dateCreation"
         class="form-control"
       />

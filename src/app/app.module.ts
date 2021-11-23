@@ -3,24 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ProduitsComponent } from './produits/produits.component';
-import { AddProduitComponent } from './add-produit/add-produit.component';
+import { RobotsComponent } from './robots/robots.component';
+import { AddRobotComponent } from './add-robot/add-robot.component';
 import { FormsModule } from '@angular/forms';
-import { UpdateProduitComponent } from './update-produit/update-produit.component';
+import { UpdateRobotComponent } from './update-robot/update-robot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProduitsComponent,
-    AddProduitComponent,
-    UpdateProduitComponent
+    RobotsComponent,
+    AddRobotComponent,
+    UpdateRobotComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

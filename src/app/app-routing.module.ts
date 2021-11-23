@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ProduitsComponent } from './produits/produits.component';
-import { AddProduitComponent } from './add-produit/add-produit.component';
-import { UpdateProduitComponent } from './update-produit/update-produit.component';
+import { RobotsComponent } from './robots/robots.component';
+import { AddRobotComponent } from './add-robot/add-robot.component';
+import { UpdateRobotComponent } from './update-robot/update-robot.component';
 
 const routes: Routes = [
-  { path: 'robots', component: ProduitsComponent },
+  { path: 'robots', component: RobotsComponent },
 
-  { path: 'add-robot', component: AddProduitComponent },
+  { path: 'add-robot', component: AddRobotComponent },
 
-  { path: 'updateRobot/:id', component: UpdateProduitComponent },
+  { path: 'updateRobot/:id', component: UpdateRobotComponent },
 
   { path: '', redirectTo: 'robots', pathMatch: 'full' },
 ];

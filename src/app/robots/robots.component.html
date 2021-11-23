@@ -9,22 +9,22 @@
           <th>Prix</th>
           <th>Date Création</th>
         </tr>
-        <tbody *ngFor="let produit of produits">
+        <tbody *ngFor="let produit of robots">
           <tr>
-            <td>{{ produit.idProduit }}</td>
-            <td>{{ produit.nomProduit }}</td>
+            <td>{{ produit.idRobot }}</td>
+            <td>{{ produit.nomRobot }}</td>
             <td>{{ produit.nomDev }}</td>
-            <td>{{ produit.prixProduit }}</td>
+            <td>{{ produit.prixRobot }}</td>
             <td>{{ produit.dateCreation | date: "dd/MM/yyyy" }}</td>
             <td>
-              <a class="btn btn-danger" (click)="supprimerProduit(produit)">
+              <a class="btn btn-danger" (click)="supprimerRobot(produit)">
                 Supprimer
               </a>
             </td>
             <td>
               <a
                 class="btn btn-success"
-                [routerLink]="['/updateRobot', produit.idProduit]"
+                [routerLink]="['/updateRobot', produit.idRobot]"
               >
                 Modifier
               </a>
